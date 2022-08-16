@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login form</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="Main_Container">
+        <div>
+            <h1>Hi samandrita please fill out topics completed till yesterday</h1>
+            <textarea id="Text" cols="30" rows="10"></textarea>
+            <div class="feild-container">
+                <Label>Counts Words:-</Label>
+                <input id="CW" placeholder="Count Words" type="text" />
+                <Label>CTC:-</Label>
+                <input id="CTC" placeholder="CTC" type="text" />
+            </div>
+            <p id="showdata"></p>
+            <button id="button" onclick="countwords()">Proceed</button>
+        </div>
+    </div>
+    <script >
+            const countwords =  () => {
+            let Count_Words = document.getElementById("Text").value;
+            Count_Words = Count_Words.match(/\w+/g);
+            Count_Words = Count_Words.length;
+            document.getElementById("CW").defaultValue = Count_Words;
+            let CTC_Value = document.getElementById("CTC").value;
+            let CountWords_Value = document.getElementById("CW").value;
+            let Final_Payout = CountWords_Value * CTC_Value;
+            document.getElementById("showdata").innerHTML = "Total Payout = " + Final_Payout;
+            
+        };
+ 
+        
+
+        
+    </script>
+</body>
+
+</html>

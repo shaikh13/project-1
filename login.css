@@ -1,0 +1,78 @@
+.login-box {
+    /* width: 100%; */
+    margin-top: 50px;
+    margin-left: 45%;
+    align-items: center;
+    box-shadow: 10px 10px 5px lightblue;
+    width: 350px;
+    height: 310px;
+}
+
+h1 {
+    margin-left: 60px;
+}
+
+p {
+    margin-left: 60px;
+}
+
+.login-box input[type="button"] {
+    width: 30%;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #099ed5;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    margin-left: 90px;
+    margin-top: 50px;
+}
+
+.login-box input[type="button"]:hover {
+    background-color: rgb(250, 12, 12);
+}
+
+.login-box input[type="password"] {
+    margin-top: 30px;
+    margin-left: 60px;
+    border: none;
+    background: transparent;
+    outline: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.554);
+    height: 20px;
+}
+
+/* this is for Topic.html CSS */
+
+.Main_Container {
+    color: #099fd5;
+    display: flex;
+    justify-content: center;
+}
+
+#Text {
+    border: 3px #099fd5 solid;
+    border-radius: 10px;
+    width: 500px;
+    height: 250px;
+    margin: 50px 150px 10px;
+}
+
+#button {
+    width: 100px;
+    margin: 30px 380px;
+    color: #099fd5;
+}
+
+.feild-container {
+    margin: 10px 160px 30px;
+}
+
+#showdata{
+    height: 20px;
+    border: 2px solid rgb(203, 158, 158);
+    border-radius: 25px;
+    text-align: center;
+    margin: 0px 300px;
+}
